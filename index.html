@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
+    <script src="https://unpkg.com/qrious@4.0.2/dist/qrious.js"></script>
+    <link rel="stylesheet" href="styles/style-generator.css" type="text/css">
+    <link rel="icon" href="images/logo-Uniagustiniana.png">
+    <title>Generador de Código QR</title>
+</head>
+<body>
+    <header>
+        <img src="images/logo-Uniagustiniana.png" id="logo-Uniagustiniana">
+        <h1>Generador de Código QR</h1>
+    </header>
+    <main>
+        <div class="generator">
+            <div class="input-c">
+                <label class="labeles" for="enlace">Enlace*</label>
+                <input class="input-form" type="url" id="enlace" name="enlace" placeholder="Eje: https://www.uniagustiniana.edu.co/">
+            </div>
+            <div class="input-c inp-btn" id="input-g">
+                <input class="btn" type="button" value="Generar" id="generate-QR">
+            </div>
+            <div class="canvas-c" id="canvas-qr">
+                <canvas class="container-codeQr dis-can" id="c-codeQr"></canvas>
+            </div>
+            <div class="input-c inp-btn dis" id="input-d">
+                <input class="btn" type="button" value="Descargar" id="download-btn">
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="copyright">
+            <p>2022 © Copyright <a href="https://github.com/JairTorres1003" target="_blank">Jair Torres</a></p>
+        </div>
+        <script src="js/main.generator-qr.js" type="text/javascript"></script>
+    </footer>
+</body>
+</html>
