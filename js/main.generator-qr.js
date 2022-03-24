@@ -48,7 +48,7 @@ function generate(enlace) {
     let y = (canvas.height / 2) - IconCode.height / 2;
     let context = canvas.getContext('2d');
     // Fondo del QR -------------------------------------------
-    
+    context.beginPath();
     context.rect(0, 0, canvas.width, canvas.height);
     context.fillStyle = "rgb(254,254,254)";
     context.fill();
