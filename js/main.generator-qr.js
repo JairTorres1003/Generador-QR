@@ -55,13 +55,13 @@ function generate(enlace) {
     // QR -----------------------------------------------------
     context.drawImage(CodeQR_Img, 50, 50);
     // context.closePath();
-    //Contenedor Fondo Logo QR --------------------------------
-    context.beginPath();
-    context.rect(x, y, IconCode.width, IconCode.height);
-    context.fillStyle = "rgb(254,254,254)";
-    context.fill();
-    // Logo QR ------------------------------------------------
-    context.drawImage(IconCode, x, y);
+    // // Contenedor Fondo Logo QR --------------------------------
+    // context.beginPath();
+    // context.rect(x, y, IconCode.width, IconCode.height);
+    // context.fillStyle = "rgb(254,254,254)";
+    // context.fill();
+    // // Logo QR ------------------------------------------------
+    // context.drawImage(IconCode, x, y);
     context.closePath();
 
     setTimeout(() => {
