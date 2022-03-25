@@ -29,9 +29,9 @@ function loadCodeQr(enlace) {
 function generate(enlace) {
     let CodeQR_Img = document.createElement('img');
     // let IconCode = document.getElementById('logo-Uniagustiniana');
-    let IconCode = document.createElement('img');
-    IconCode.src = "images/logo-Uniagustiniana.png";
-    document.body.append(IconCode);
+    // let IconCode = document.createElement('img');
+    // IconCode.src = "images/logo-Uniagustiniana.png";
+    // document.body.append(IconCode);
     new QRious({   //qrious es el generador del qr
         element: CodeQR_Img,
         value: enlace, // La URL o el texto
@@ -44,8 +44,8 @@ function generate(enlace) {
     let canvas = document.getElementById('c-codeQr');
     canvas.width = CodeQR_Img.width + 100;
     canvas.height = CodeQR_Img.height + 100;
-    let x = (canvas.width / 2) - IconCode.width / 2;
-    let y = (canvas.height / 2) - IconCode.height / 2;
+    // let x = (canvas.width / 2) - IconCode.width / 2;
+    // let y = (canvas.height / 2) - IconCode.height / 2;
     let context = canvas.getContext('2d');
     // Fondo del QR -------------------------------------------
     context.beginPath();
@@ -67,7 +67,7 @@ function generate(enlace) {
     setTimeout(() => {
         input_d.classList.remove('dis');
     }, 1000);
-    IconCode.remove();
+    // IconCode.remove();
 }
 // Evento para descargar el código qr --------------------------------------------
 const download_btn = document.getElementById('download-btn');
